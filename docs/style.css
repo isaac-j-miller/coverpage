@@ -9,7 +9,7 @@
 
 html{
     font-family: Helvetica, Arial, sans-serif;
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
 }
 header{
     position: relative;
@@ -17,7 +17,6 @@ header{
     background-image: url(images/hero2.jpg);
     background-size: cover;
     background-position: center;
-    
     margin: 0;
     padding: 0;
     left: 0;
@@ -39,21 +38,25 @@ header{
     border-right: .15em solid var(--white-txt-color);
     white-space: nowrap;
     margin: 0 auto;
+    opacity: 0;
     animation: 
         typing 1.5s steps(20, end),
         blink-caret .75s step-end infinite;
+    animation-delay: 1s;
     -webkit-animation: 
         typing 1.5s steps(20, end),
         blink-caret .75s step-end infinite;
+    -webkit-animation-delay: 1s;
+    animation-fill-mode: forwards;
 }
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from { width: 0;  }
+    to { width: 100%;  opacity: 1}
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-    from, to { border-color: transparent }
+    from, to { border-color: transparent;}
     50% { border-color:var(--white-txt-color); }
 }
 #selectors{
@@ -182,7 +185,7 @@ footer{
 #prev{
     position: absolute;
     bottom: 40%;
-    left: 2%;
+    left: 1%;
     transform: translate(-50%, -50%);
     font-size: 2em;
     color: var(--main-bg-color);
