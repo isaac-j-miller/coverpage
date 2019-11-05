@@ -17,6 +17,8 @@ var slidesIndex = -1;
 
 $(document).ready(function(){
     // Add smooth scrolling to all links
+    $("#downarrow").css("opacity","0.35")
+
     $("a").on('click', function(event) {
   
       // Make sure this.hash has a value before overriding default behavior

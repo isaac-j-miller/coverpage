@@ -21,17 +21,16 @@ header{
     padding: 0;
     left: 0;
     top: 0;
-    
 }
 
 #header-div{
     position: absolute;
     text-align: center;
     color: var(--white-txt-color);
-    top: 50%;
-    left: 50%;
+    top: 1%;
+    left: 1%;
     font-size: 2em;
-    transform: translate(-50%, -50%);
+    /*transform: translate(-50%, -50%);*/
 }
 #header-label{
     overflow: hidden;
@@ -64,15 +63,29 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 75%;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 50%;
+    top: 3%;
+    right: 1%;
+    opacity: 0;
+    /*transform: translate(-50%, -50%);*/
+    animation: 
+        fade 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation: 
+        fade 1.5s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes fade{
+    from {opacity: 0}
+    to {opacity: 1}
 }
 .horizontal-divider{
     width: 100%;
 }
 #select-items{
+    position: absolute;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -86,16 +99,18 @@ a.selector:visited{
     text-decoration: none;
 }
 a.selector:hover{
-    text-decoration: underline;
+    opacity: .5;
 }
 .selector{
     display: inline;
     text-align: center;
+    padding: 0;
     margin-top: 2vh;
     flex-shrink: 1;
     flex-grow: 1;
     color: var(--white-txt-color);
     font-size: 2em;
+    transition-duration: .1s;
 }
 #downarrow{
     position: absolute;
@@ -105,7 +120,35 @@ a.selector:hover{
     transform: translate(-50%, -50%);
     filter: invert(.99);
     -webkit-filter: invert(.99);
-    opacity: .35;
+    transition-delay: 2s;
+    transition-duration: 1s;
+    opacity: 0;
+    /*
+    
+    animation: 
+        fade2 1.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation: 
+        fade2 1.5s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    */
+    
+}
+@keyframes fade2{
+    from {opacity: 0}
+    to {opacity: 0.35}
+}
+#downarrow:hover{
+    animation: grow 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation: grow 1s;
+    -webkit-animation-fill-mode: forwards;
+}
+@keyframes grow{
+    from, to {height: 10%; opacity: .35;}
+    50% {height: 12%; opacity: .5;}
 }
 body{
     position: relative;
@@ -118,8 +161,11 @@ body{
     background-color: var(--main-bg-color);
 }
 .section{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 1%;
-    width: 98%;
+    width: 60%;
 }
 footer{
     position: relative;
@@ -163,12 +209,12 @@ footer{
 #gallery-slideshow{
     position: relative;
     height: 90vh;
-    max-width: 100vw;
+    width: 100%;
     padding: 2vh 0 0 0;
     margin: 0;
     background-color: var(--main-txt-color);
     background-image: none;
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-origin: content-box;
     background-position: center;
@@ -194,7 +240,7 @@ footer{
 #next{
     position: absolute;
     bottom: 40%;
-    right: 0%;
+    right: -.5%;
     font-size: 2em;
     transform: translate(-50%, -50%);
     color: var(--main-bg-color);
