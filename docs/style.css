@@ -66,21 +66,9 @@ header{
     width: 50%;
     top: 3%;
     right: 1%;
-    opacity: 0;
-    /*transform: translate(-50%, -50%);*/
-    animation: 
-        fade 1.5s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    -webkit-animation: 
-        fade 1.5s;
-    -webkit-animation-delay: 2s;
-    -webkit-animation-fill-mode: forwards;
+    
 }
-@keyframes fade{
-    from {opacity: 0}
-    to {opacity: 1}
-}
+
 .horizontal-divider{
     width: 100%;
 }
@@ -98,9 +86,7 @@ a.selector:link{
 a.selector:visited{
     text-decoration: none;
 }
-a.selector:hover{
-    opacity: .5;
-}
+
 .selector{
     display: inline;
     text-align: center;
@@ -110,8 +96,46 @@ a.selector:hover{
     flex-grow: 1;
     color: var(--white-txt-color);
     font-size: 2em;
-    transition-duration: .1s;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    opacity: 0;
+    /*transform: translate(-50%, -50%);*/
+    animation: 
+        fade 1.5s;
+    
+    animation-fill-mode: forwards;
+    -webkit-animation: 
+        fade 1.5s;
+    
+    -webkit-animation-fill-mode: forwards;
 }
+@keyframes fade{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+#mission{
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+#milestones{
+    animation-delay: 2.2s;
+    -webkit-animation-delay: 2.2s;
+}
+#gallery{
+    animation-delay: 2.4s;
+    -webkit-animation-delay: 2.4s;
+}
+#contact{
+    animation-delay: 2.6s;
+    -webkit-animation-delay: 2.6s;
+}
+#login{
+    animation-delay: 2.8s;
+    -webkit-animation-delay: 2.8s;
+}
+.selector:hover{
+    color: var(--lighter-txt-color);
+}   
 #downarrow{
     position: absolute;
     height: 10%;
