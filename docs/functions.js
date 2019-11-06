@@ -84,6 +84,7 @@ const profiles =
         personal_website:"https://www.linkedin.com/in/dominic-coradazzi-5bb976184"
     },
 ]
+
 var slidesIndex = -1;
 
 $(document).ready(function(){
@@ -94,13 +95,14 @@ $(document).ready(function(){
         $("#downarrow-container").css("opacity",".35");
         }, 5600);
     $("#downarrow-container").mouseover(function(event){
-            $("#downarrow-container").css("height","12vh");
-            $("#downarrow-container").css("opacity","0.5");
-            setTimeout(function() {
-                $("#downarrow-container").css("opacity",".35");
-                $("#downarrow-container").css("height","10vh");
-                }, 500);
-        });
+        $("#downarrow-container").css("height","12vh");
+        $("#downarrow-container").css("opacity","0.5");
+        setTimeout(function() {
+            $("#downarrow-container").css("opacity",".35");
+            $("#downarrow-container").css("height","10vh");
+            }, 500);
+    });
+    
     $("a").on('click', function(event) {
   
       // Make sure this.hash has a value before overriding default behavior

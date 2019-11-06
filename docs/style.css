@@ -186,6 +186,149 @@ body{
     margin-right:10vw;
     width: 80vw;
 }
+#functions-interactive{
+    height: 85vh;
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0;
+    background-image: url(images/functions/_rgba.png);
+    background-position: left;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+/*interactive functions*/
+#color-key{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    height:100%;
+    width: 100%;
+    background-color:transparent;
+    background-position: right;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    transition-duration: 0s;
+    opacity: 0;
+    z-index: 98;
+    
+}
+#vine-health{
+    left: 50%;
+    top: 20%;
+    background-image: url(images/functions/vine.jpg);
+}
+#vine-health-caption{
+    left: 72%;
+    top: 10%;
+}
+#vine-health:hover + #vine-health-caption{
+    opacity: 1;
+}
+#vine-health:hover ~ #functional-overlay{
+    background-image: url(images/functions/_ndvi_color.png);
+    opacity: .8;
+}
+#vine-health:hover ~ #color-key{
+    background-image: url(images/functions/_ndvi_scale.png);
+    opacity: 1;
+}
+
+#water-content{
+    left: 25%;
+    bottom: 50%;
+    background-image: url(images/functions/water.png)
+}
+#water-content-caption{
+    left: 25%;
+    top: 45%;
+}
+#water-content:hover + #water-content-caption{
+    opacity: 1;
+}
+#water-content:hover ~ #functional-overlay{
+    background-image: url(images/functions/_ndre_color.png);
+    opacity: .8;
+}
+#water-content:hover ~ #color-key{
+    background-image: url(images/functions/_ndre_scale.png);
+    opacity: 1;
+}
+
+#temperature{
+    left: 60%;
+    top: 60%;
+    background-image: url(images/functions/thermometer.png)
+}
+#temperature-caption{
+    left: 37%;
+    top: 55%;
+}
+#temperature:hover + #temperature-caption{
+    opacity: 1;
+}
+#temperature:hover ~ #functional-overlay{
+    background-image: url(images/functions/_thermal_color.png);
+    opacity: .8;
+}
+#temperature:hover ~ #color-key{
+    background-image: url(images/functions/_thermal_scale.png);
+    opacity: 1;
+}
+
+#functional-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    background-position: center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    transition-duration: 1s;
+    z-index:98;
+    opacity: 0;
+}
+.function-node{
+    position: absolute;
+    height: 5em;
+    width: 5em;
+    border: solid var(--main-txt-color);
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--main-bg-color);
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    z-index: 99;
+    transition-duration: 1s;
+   
+}
+.caption{
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 100;
+    width: 30%;
+    height: auto;
+    border: solid var(--main-txt-color);
+    border-radius: 2vh;
+    background-color: var(--main-bg-color);
+    opacity: 0;
+    transition-duration: 1s;
+}
+.caption-interior-header{
+    padding-bottom: 0;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+}
+.caption-interior{
+    padding-top: 0;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+}
+/*end interactive functions*/
 #journey-interactive{
     height: 85vh;
     position: relative;
@@ -377,6 +520,25 @@ footer{
     #image-caption{
         font-size: 1.5em;
     }
+    .function-node{
+        height: 3em;
+        width: 3em;
+    }
+    #functions-interactive{
+        height: 60vh;
+    }
+    
+}
+@media only screen and (max-device-width: 768px){
+    #functions-interactive{
+        height: 80vh;
+    }
+    #vine-health{
+        top: 30%;
+    }
+    #vine-health-caption{
+        top: 20%;
+    }
 }
 @media only screen and (max-device-width: 468px){
     #header-div{
@@ -404,4 +566,31 @@ footer{
     #copyright{
         font-size:.5em;
     }
+    .function-node{
+        height: 2em;
+        width: 2em;
+    }
+    #functions-interactive{
+        height: 30vh;
+    }
+    #vine-health-caption{
+        transform: translate(0,0);
+        left: 0;
+        top: 100%;
+        width: 100%;
+    }
+    #water-content-caption{
+        transform: translate(0,0);
+        left: 0;
+        top: 100%;
+        width: 100%;
+    }
+    #temperature-caption{
+        transform: translate(0,0);
+        left: 0;
+        top: 100%;
+        width: 100%;
+    }
+
+    
 }
