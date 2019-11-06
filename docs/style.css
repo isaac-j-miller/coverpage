@@ -27,10 +27,9 @@ header{
     position: absolute;
     text-align: center;
     color: var(--white-txt-color);
-    top: 1%;
+    top: 3%;
     left: 1%;
-    font-size: 2em;
-    /*transform: translate(-50%, -50%);*/
+    font-size: 2vw;
 }
 #header-label{
     overflow: hidden;
@@ -95,7 +94,7 @@ a.selector:visited{
     flex-shrink: 1;
     flex-grow: 1;
     color: var(--white-txt-color);
-    font-size: 2em;
+    font-size: 2vw;
     transition-duration: .5s;
     -webkit-transition-duration: .5s;
     opacity: 0;
@@ -282,22 +281,14 @@ footer{
     #header-div{
         top: 50%;
         left: 50%;
-        font-size: 2em;
+        font-size: 3vw;
         transform: translate(-50%, -50%);
     }
     #selectors{
         top: 60%;
         right: 50%;
         width: 80%;
-        font-size: 2em;
         transform: translate(50%, -50%);
-    }
-    #header-label{
-        font-size: 6vw;
-
-    }
-    #select-items{
-        font-size: 2.5vw; 
     }
     #gallery-slideshow{
         height: 35vh;
@@ -309,8 +300,14 @@ footer{
         width: 60%;
         top: 60%;
         left: 50%;
-        font-size: 2vw;
+        
         transform: translate(-50%, -50%);
+    }
+    #header-label{
+        font-size: 8vw;
+    }
+    .selector{
+        font-size: 5vw;
     }
     .section{
         width: 98%;

@@ -13,6 +13,12 @@ const slides =
         caption:"Momo, Jacob's dog"
     }
 ]
+const profiles = 
+[
+    {
+        
+    }
+]
 var slidesIndex = -1;
 
 $(document).ready(function(){
