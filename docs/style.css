@@ -74,7 +74,7 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 50%;
+    width: 60%;
     top: 3%;
     right: 1%;
     
@@ -102,8 +102,8 @@ a.selector:visited{
     display: inline;
     text-align: center;
     margin-top: 2vh;
-    padding-left:.5vw;
-    padding-right: .5vw;
+    padding-left:.75vw;
+    padding-right: .75vw;
     flex-shrink: 1;
     flex-grow: 1;
     color: var(--white-txt-color);
@@ -143,50 +143,32 @@ a.selector:visited{
 }
 #login{
     animation-delay: 3.8s;
-    -webkit-animation-delay: 3.8s;
+    -webkit-animation-delay: 3 .8s;
 }
 .selector:hover{
     color: var(--lighter-txt-color);
-}   
-#downarrow{
+} 
+#downarrow-container{
     position: absolute;
-    height: 10%;
+    height: 10vh;
     bottom: 5%;
     left: 50%;
+    opacity: 0;
     transform: translate(-50%, -50%);
+    animation: grow 1s;
+    animation-delay: 4.6s;
+    animation-fill-mode: initial;
+    transition-duration: 1s;
+}
+#downarrow{
+    position: relative;
+    height: 100%;
     filter: invert(.99);
     -webkit-filter: invert(.99);
-    transition-delay: 5s;
-    transition-duration: 1s;
-    opacity: 0;
-    /*
-    
-    animation: 
-        fade2 1.5s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    -webkit-animation: 
-        fade2 1.5s;
-    -webkit-animation-delay: 2s;
-    -webkit-animation-fill-mode: forwards;
-    */
-    animation: grow 1s;
-    animation-delay: 5s;
-    
-}
-@keyframes fade2{
-    from {opacity: 0}
-    to {opacity: 0.35}
-}
-#downarrow:hover{
-    animation: grow 1s;
-    animation-fill-mode: forwards;
-    -webkit-animation: grow 1s;
-    -webkit-animation-fill-mode: forwards;
 }
 @keyframes grow{
-    from, to {height: 10%; opacity: .35;}
-    50% {height: 12%; opacity: .5;}
+    from, to {height: 10vh; opacity: .35}
+    50% {height: 12vh; opacity: .5}
 }
 body{
     position: relative;
