@@ -8,6 +8,7 @@
         <title>skyprecision</title>
     </head>
     <header>
+        <div id="hero"></div>
         <div id="header-div">
             <h1 id="header-label">skyprecision.app</h1>
         </div>
@@ -16,7 +17,7 @@
                 <a id="mission" class="selector" href="#ourmission">our mission</a>
                 <a id="milestones" class="selector" href="#milestonesbody">our journey</a>
                 <a id="gallery" class="selector" href="#gallerybody">gallery</a>    
-                <a id="contact" class="selector" href="#contact-footer">contact</a>
+                <a id="contact" class="selector" href="#aboutbody">meet the team</a>
                 <a id="login" class="selector" href="https://ami2.netlify.com/">login</a>
             </div>
         </div>
@@ -45,15 +46,19 @@
         <div id="gallerybody" class="section">
             <h1>gallery</h1>
             <div class="slideshow" id="gallery-slideshow">
-                <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a id="next" onclick="plusSlides(1)">&#10095;</a>
+                    <img id="gallery-slideshow-image">
+                <a id="prev" onclick="plusSlides(-1)"><img class="slideshow-button" src="images/left.png"></a>
+                
+                <a id="next" onclick="plusSlides(1)"><img class="slideshow-button" src="images/right.png"></a>
             </div>
             <div id="image-caption"></div>
         </div>
         
         <div id="aboutbody" class="section">
-            <h1>about us</h1>
-            <p>Lorem ipsum dolor sit amet, mel lorem laudem at, cu lorem liber prodesset has. Mei pericula rationibus expetendis an, sit stet nulla nominavi ex, vis ei vidit officiis insolens. Eam at ullum altera dissentiet, id has veniam platonem, qui at error recteque. At sit lucilius forensibus, solet qualisque dignissim te sed, liber patrioque evertitur ius ad. Diam impedit iudicabit sea ea, in sea movet pericula, vis te facilisi consetetur.</p>
+            <h1>meet the team</h1>
+            <div id="profile-container">
+                
+            </div>
         </div>
     </body>
     <footer>
@@ -62,5 +67,6 @@
         <div id="contact-footer">
             <a href="mailto:millerij@dukes.jmu.edu" class="social-link"><img src="images/email.png" class="social-icon" ></a>
         </div>
+        <p id="copyright">Website designed by Isaac Miller. &copy; 2019 by SkyPrecision</p>
     </footer>
 </html>
