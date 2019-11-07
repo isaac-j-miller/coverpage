@@ -74,7 +74,7 @@ const profiles =
     {
         name:"Ernie Benner",
         major:"Engineering",
-        minor:"Something",
+        minor: null,
         profile_img_src:"images/profilepics/ernie.png",
         description:"Ernie is a 4<sup>th</sup>-year student at James Madison University,\
                     graduating in May of 2020. He wants to work as a data scientist in the future and is excited to apply machine learning techniques to analyze \
