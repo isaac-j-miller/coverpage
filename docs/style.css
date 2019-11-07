@@ -9,7 +9,6 @@
 
 html{
     font-family: Helvetica, Arial, sans-serif;
-    /*scroll-behavior: smooth;*/
 }
 header{
     position: relative;
@@ -180,6 +179,11 @@ body{
     color: var(--lighter-txt-color);
     background-color: var(--main-bg-color);
 }
+a.intrasection{
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--darker-bg-color);
+}
 .section{
     position: relative;
     margin-left:10vw;
@@ -238,7 +242,7 @@ body{
 #water-content{
     left: 25%;
     top: 35%;
-    background-image: url(images/functions/water.png)
+    background-image: url(images/functions/chlorophyll.jpeg)
 }
 #water-content-caption{
     left: 25%;
@@ -260,7 +264,7 @@ body{
 #temperature{
     left: 60%;
     top: 60%;
-    background-image: url(images/functions/thermometer.png)
+    background-image: url(images/functions/heat.jpeg)
 }
 #temperature-caption{
     left: 37%;
@@ -608,6 +612,12 @@ footer{
         width: 100%;
     }
     #temperature-caption{
+        transform: translate(0,0);
+        left: 0;
+        top: 100%;
+        width: 100%;
+    }
+    #geopin-caption{
         transform: translate(0,0);
         left: 0;
         top: 100%;
