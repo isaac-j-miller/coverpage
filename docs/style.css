@@ -224,6 +224,7 @@ body{
 }
 #vine-health:hover + #vine-health-caption{
     opacity: 1;
+    display: block;
 }
 #vine-health:hover ~ #functional-overlay{
     background-image: url(images/functions/_ndvi_color.png);
@@ -236,7 +237,7 @@ body{
 
 #water-content{
     left: 25%;
-    bottom: 50%;
+    top: 35%;
     background-image: url(images/functions/water.png)
 }
 #water-content-caption{
@@ -245,6 +246,7 @@ body{
 }
 #water-content:hover + #water-content-caption{
     opacity: 1;
+    display: block;
 }
 #water-content:hover ~ #functional-overlay{
     background-image: url(images/functions/_ndre_color.png);
@@ -266,6 +268,7 @@ body{
 }
 #temperature:hover + #temperature-caption{
     opacity: 1;
+    display: block; 
 }
 #temperature:hover ~ #functional-overlay{
     background-image: url(images/functions/_thermal_color.png);
@@ -303,6 +306,7 @@ body{
    
 }
 .caption{
+    display: none;
     position: absolute;
     transform: translateX(-50%);
     z-index: 100;
@@ -313,6 +317,7 @@ body{
     background-color: var(--main-bg-color);
     opacity: 0;
     transition-duration: 1s;
+
 }
 .caption-interior-header{
     padding-bottom: 0;
