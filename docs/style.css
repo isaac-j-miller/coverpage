@@ -226,18 +226,18 @@ body{
     opacity: 1;
 }
 #vine-health:hover ~ #functional-overlay{
-    background-image: url(images/functions/_ndvi_color.png);
+    background-image: url(images/functions/_ndvi_color.PNG);
     opacity: .8;
 }
 #vine-health:hover ~ #color-key{
-    background-image: url(images/functions/_ndvi_scale.png);
+    background-image: url(images/functions/_ndvi_scale.PNG);
     opacity: 1;
 }
 
 #water-content{
     left: 25%;
     bottom: 50%;
-    background-image: url(images/functions/water.png)
+    background-image: url(images/functions/water.PNG)
 }
 #water-content-caption{
     left: 25%;
@@ -247,18 +247,18 @@ body{
     opacity: 1;
 }
 #water-content:hover ~ #functional-overlay{
-    background-image: url(images/functions/_ndre_color.png);
+    background-image: url(images/functions/_ndre_color.PNG);
     opacity: .8;
 }
 #water-content:hover ~ #color-key{
-    background-image: url(images/functions/_ndre_scale.png);
+    background-image: url(images/functions/_ndre_scale.PNG);
     opacity: 1;
 }
 
 #temperature{
     left: 60%;
     top: 60%;
-    background-image: url(images/functions/thermometer.png)
+    background-image: url(images/functions/thermometer.PNG)
 }
 #temperature-caption{
     left: 37%;
@@ -268,11 +268,11 @@ body{
     opacity: 1;
 }
 #temperature:hover ~ #functional-overlay{
-    background-image: url(images/functions/_thermal_color.png);
+    background-image: url(images/functions/_thermal_color.PNG);
     opacity: .8;
 }
 #temperature:hover ~ #color-key{
-    background-image: url(images/functions/_thermal_scale.png);
+    background-image: url(images/functions/_thermal_scale.PNG);
     opacity: 1;
 }
 
