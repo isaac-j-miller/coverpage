@@ -68,7 +68,7 @@ const profiles =
         minor:"Robotics",
         profile_img_src:"images/profilepics/brian.jpg",
         description:"Brian is a 6<sup>th</sup>-year student at James Madison University. \
-                     He switched majors from Computer Science to Engineering and has lots of hands on experience in fabrication and electronics. ",
+                     He switched majors from Computer Science to Engineering and has lots of hands-on experience in fabrication and electronics. ",
         personal_website:"https://www.linkedin.com/in/brian-schieber-55505879"
     },
     {
@@ -86,7 +86,7 @@ const profiles =
         major:"Engineering",
         minor:"Mathematics, Robotics",
         profile_img_src:"images/profilepics/dominic.jpg",
-        description:"Dominic is a 5<sup>th</sup>-year student at James Madison University.",
+        description:"Dominic is a 5<sup>th</sup>-year student at James Madison University. He hopes to follow a career that synthesizes his passion for electrical and mechanical systems",
         personal_website:"https://www.linkedin.com/in/dominic-coradazzi-5bb976184"
     },
 ]

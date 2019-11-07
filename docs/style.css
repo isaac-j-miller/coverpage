@@ -190,6 +190,7 @@ a.intrasection{
     margin-right:10vw;
     width: 80vw;
 }
+/*interactive functions*/
 #functions-interactive{
     height: 85vh;
     position: relative;
@@ -201,7 +202,7 @@ a.intrasection{
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
-/*interactive functions*/
+
 #color-key{
     position: absolute;
     right: 0%;
