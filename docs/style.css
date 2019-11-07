@@ -279,6 +279,23 @@ body{
     opacity: 1;
 }
 
+#geopin{
+    left: 35%;
+    top: 60%;
+    background-color: transparent;
+    border-color: transparent;
+    background-image: url(images/functions/pin.png);
+    
+}
+#geopin-caption{
+    left: 35%;
+    top: 70%;
+}
+#geopin:hover + #geopin-caption{
+    opacity: 1;
+    display: block; 
+}
+
 #functional-overlay{
     height: 100%;
     width: 100%;
