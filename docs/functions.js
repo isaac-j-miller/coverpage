@@ -9,8 +9,20 @@ const slides =
         caption:"The team wins 1st place at the Madison Engineering xChange, Spring 2019"
     },
     {
-        src:"images/gallery/dog.jpg",
-        caption:"Momo, Jacob's dog"
+        src:"images/gallery/formation.jpg",
+        caption:"The team plays disc golf at the park"
+    },
+    {
+        src:"images/gallery/whiteboard.jpg",
+        caption:"The team sketches an outline for the web app"
+    },
+    {
+        src:"images/gallery/cropped_brian_jacob_drone.png",
+        caption:"Brian and Jacob prepare for a flight"
+    },
+    {
+        src:"images/gallery/cropped_justyn_drone.jpg",
+        caption:"Justyn test flies a drone"
     }
 ]
 const profiles = 
@@ -230,7 +242,7 @@ $(document).ready(function(){
             $("#downarrow-container").css("height","10vh");
             }, 500);
     });
-    $("#journey-interactive").click(advanceMilestone);
+    //$("#journey-interactive").click(advanceMilestone);
     $("a").on('click', function(event) {
   
       // Make sure this.hash has a value before overriding default behavior
